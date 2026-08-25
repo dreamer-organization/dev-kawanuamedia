@@ -16,7 +16,7 @@ export default function NotFound() {
         <motion.div
           animate={{ x: [0, -80, 0], y: [0, 60, 0], scale: [1, 1.15, 1] }}
           transition={{ duration: 18, repeat: Infinity }}
-          className="absolute right-0 bottom-10 h-[420px] w-[420px] rounded-full bg-maron-kawanuamedia-800/20 blur-3xl"
+          className="absolute right-0 bottom-10 h-105 w-105 rounded-full bg-maron-kawanuamedia-800/20 blur-3xl"
         />
       </div>
 
