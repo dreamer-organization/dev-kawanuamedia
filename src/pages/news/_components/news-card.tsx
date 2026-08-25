@@ -28,13 +28,11 @@ export default function NewsCard({
 }: Props) {
   return (
     <article className="group border-b border-[#E7EBE9] py-5 last:border-b-0 mb-0">
-      <Link to={`/berita/${item?.id}` as never} className="grid grid-cols-[305px_minmax(0,1fr)] gap-5 no-underline xl:grid-cols-[305px_minmax(0,1fr)]">
+      <Link to={`/berita/${item?.id}` as never} className="grid md:grid-cols-[305px_minmax(0,1fr)] gap-5 no-underline xl:grid-cols-[305px_minmax(0,1fr)]">
         {/* ==================================================
             IMAGE
         =================================================== */}
-        <div
-          className="h-35.25 w-full overflow-hidden rounded-[7px] bg-[#EEF1EF]"
-        >
+        <div className="h-35.25 w-full overflow-hidden rounded-[7px] bg-[#EEF1EF]">
           <img
             src={item?.image}
             alt={item?.title}
