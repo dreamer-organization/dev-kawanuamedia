@@ -24,41 +24,41 @@ export const menus: MenuItem[] = [
   },
   {
     name: "Daerah",
-    to: "/kategori/daerah",
+    to: "/daerah",
     type: "route",
     dropdown: true,
     children: [
       {
         name: "Sulawesi Utara",
-        to: "/kategori/daerah/sulawesi-utara",
+        to: "/daerah/sulawesi-utara",
       },
       {
         name: "Manado",
-        to: "/kategori/daerah/manado",
+        to: "/daerah/manado",
       },
       {
         name: "Minahasa",
-        to: "/kategori/daerah/minahasa",
+        to: "/daerah/minahasa",
       },
       {
         name: "Bitung",
-        to: "/kategori/daerah/bitung",
+        to: "/daerah/bitung",
       },
     ],
   },
   {
     name: "Nasional",
-    to: "/kategori/nasional",
+    to: "/nasional",
     type: "route",
   },
   {
     name: "Budaya",
-    to: "/kategori/budaya",
+    to: "/budaya",
     type: "route",
   },
   {
     name: "Lifestyle",
-    to: "/kategori/lifestyle",
+    to: "/lifestyle",
     type: "route",
   },
   {

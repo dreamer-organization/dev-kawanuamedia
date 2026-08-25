@@ -70,18 +70,21 @@ export default {
 					dark: "#032A16",
 					light: "#F4FAF7",
 				},
-				'premium-gold-kawanuamedia': {
-					50: "#FBF5E8",
-					100: "#F5E8C8",
-					200: "#ECD59F",
-					300: "#E4C278",
-					400: "#DDB05A",
-					500: "#B88732",
-					600: "#986D27",
-					700: "#76501F",
-					800: "#523716",
-					900: "#33230F",
-					DEFAULT: '#D4A144'
+				"maron-kawanuamedia": {
+					50: "#FCE9E8",
+					100: "#F8C7C5",
+					200: "#F3A19E",
+					300: "#EC7773",
+					400: "#E04C47",
+					500: "#CE2F29",
+					600: "#B6160F",
+					700: "#920F0A",
+					800: "#700B07",
+					900: "#4D0705",
+
+					DEFAULT: "#B6160F",
+					dark: "#3A0503",
+					light: "#FFF6F5",
 				},
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
@@ -127,7 +130,11 @@ export default {
 			backgroundImage: {
 				"basic-gold-metallic-kawanuamedia": "linear-gradient( 135deg, #76501F 0%, #B88732 18%, #D4A144 35%, #F5E8C8 50%, #D4A144 65%, #B88732 82%, #76501F 100%)",
 				"premium-gold-metallic-kawanuamedia": "linear-gradient(110deg, #76501F 0%, #B88732 20%, #D4A144 38%, #F5E8C8 50%, #DDB05A 62%, #B88732 80%, #76501F 100%)",
-				"gold-metallic": "linear-gradient(110deg, #76501F 0%, #B88732 20%, #D4A144 38%, #F5E8C8 50%, #DDB05A 62%, #B88732 80%, #76501F 100%)"
+				"gold-metallic": "linear-gradient(110deg, #76501F 0%, #B88732 20%, #D4A144 38%, #F5E8C8 50%, #DDB05A 62%, #B88732 80%, #76501F 100%)",
+
+				"basic-black-metallic-kawanuamedia": "linear-gradient(135deg, #0A0A0A 0%, #2B2B2B 18%, #5A5A5A 35%, #D6D6D6 50%, #5A5A5A 65%, #2B2B2B 82%, #0A0A0A 100%)",
+				"premium-silver-metallic-kawanuamedia": "linear-gradient(110deg, #080808 0%, #1F1F1F 12%, #555555 25%, #A8A8A8 38%, #F2F2F2 50%, #A8A8A8 62%, #555555 75%, #1F1F1F 88%, #080808 100%)",
+				"steel-metallic-kawanuamedia": "linear-gradient(110deg, #111111 0%, #303030 15%, #686868 30%, #BDBDBD 42%, #E8E8E8 50%, #BDBDBD 58%, #686868 70%, #303030 85%, #111111 100%)",
 			},
 			keyframes: {
 				'accordion-down': {

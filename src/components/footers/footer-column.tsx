@@ -26,7 +26,7 @@ export default function FooterColumn({
       <ul className="mt-4 space-y-2.5">
         {items.map((item) => (
           <li key={item.label}>
-            <Link to={item.to as never} className="block text-xs leading-none text-[#707873] no-underline transition-colors duration-200 hover:text-[#08763e]">
+            <Link to={item.to as never} className="block text-xs leading-none text-[#707873] no-underline transition-colors duration-200 hover:text-maron-kawanuamedia">
               {item.label}
             </Link>
           </li>

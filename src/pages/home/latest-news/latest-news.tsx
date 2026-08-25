@@ -57,7 +57,7 @@ export default function LatestNews() {
                     Berita Terbaru
                 </h2>
 
-                <span className="h-0.5 w-7.25 rounded-full bg-[#08763e]" />
+                <span className="h-0.5 w-7.25 rounded-full bg-maron-kawanuamedia" />
             </div>
 
             {/* =====================================================
@@ -81,7 +81,7 @@ export default function LatestNews() {
 
                         {/* Content */}
                         <div className="min-w-0">
-                            <h3 className="line-clamp-3 text-[14px] font-bold leading-[1.35] text-[#252a27] transition-colors duration-200 group-hover:text-[#08763e]">
+                            <h3 className="line-clamp-3 text-[14px] font-bold leading-[1.35] text-[#252a27] transition-colors duration-200 group-hover:text-maron-kawanuamedia">
                                 {item.title}
                             </h3>
                             <span className="mt-0.75 block text-[10px] leading-none text-[#919793]">
@@ -95,7 +95,7 @@ export default function LatestNews() {
             <div className="p-2">
                 <Link
                     to={`/berita` as never}
-                    className="flex shrink-0 items-center justify-center gap-1 text-xs font-medium text-[#6d7671] no-underline transition-colors duration-200 hover:text-[#08763e] border border-[#08763e] p-1 rounded-md"
+                    className="flex shrink-0 items-center justify-center gap-1 text-xs font-medium text-[#6d7671] no-underline transition-colors duration-200 hover:text-maron-kawanuamedia border border-maron-kawanuamedia p-1 rounded-md"
                 >
                     Lihat Semua Berita
                     <IconArrowRight

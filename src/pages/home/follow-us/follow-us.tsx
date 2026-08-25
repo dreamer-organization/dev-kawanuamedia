@@ -80,7 +80,7 @@ export default function FollowUs() {
                     Ikuti Kami
                 </h2>
                 <span
-                    className="h-0.5 w-7.25 rounded-full bg-[#08763e]"
+                    className="h-0.5 w-7.25 rounded-full bg-maron-kawanuamedia"
                 />
             </div>
 

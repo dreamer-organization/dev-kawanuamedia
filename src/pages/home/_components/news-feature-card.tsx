@@ -33,7 +33,7 @@ export default function NewsFeatureCard({
                     {icon}
                     {title}
                 </h2>
-                <span className="h-0.5 w-7.25 shrink-0 rounded-full bg-[#08763e]" />
+                <span className="h-0.5 w-7.25 shrink-0 rounded-full bg-maron-kawanuamedia" />
             </div>
 
             {/* =====================================================
@@ -61,7 +61,7 @@ export default function NewsFeatureCard({
                         <div className="mt-2 flex items-center gap-1 text-xs leading-none text-[#8b938f]">
                             {featured.category && (
                                 <>
-                                    <span className="text-[#08763e]">
+                                    <span className="text-maron-kawanuamedia">
                                         {featured.category}
                                     </span>
                                     <span>•</span>
@@ -71,7 +71,7 @@ export default function NewsFeatureCard({
                         </div>
 
                         {/* Title */}
-                        <h3 className="mt-1.5 line-clamp-3 text-md font-bold leading-[1.35] text-[#252a27] transition-colors duration-200 group-hover:text-[#08763e]">
+                        <h3 className="mt-1.5 line-clamp-3 text-md font-bold leading-[1.35] text-[#252a27] transition-colors duration-200 group-hover:text-maron-kawanuamedia">
                             {featured.title}
                         </h3>
                     </Link>
@@ -99,7 +99,7 @@ export default function NewsFeatureCard({
 
                                 {/* Text */}
                                 <div className="min-w-0">
-                                    <h4 className="line-clamp-3 text-sm font-bold leading-[1.35] text-[#252a27] transition-colors duration-200 group-hover:text-[#08763e]">
+                                    <h4 className="line-clamp-3 text-sm font-bold leading-[1.35] text-[#252a27] transition-colors duration-200 group-hover:text-maron-kawanuamedia">
                                         {item.title}
                                     </h4>
                                     <div className="mt-1 flex items-center gap-1 text-xs leading-none text-[#929a96]">

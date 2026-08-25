@@ -67,7 +67,7 @@ function KawanuaLogo() {
 ============================================================ */
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-emerald-kawanuamedia shadow-2xl shadow-emerald-kawanuamedia">
+    <footer className="bg-white border-t border-maron-kawanuamedia shadow-2xl shadow-maron-kawanuamedia">
       {/* ======================================================
           MAIN FOOTER
       ======================================================= */}
@@ -130,7 +130,7 @@ export default function Footer() {
               </div>
 
               {/* Email */}
-              <a href="mailto:redaksi@kawanuamedia.id" className="flex items-center gap-2 text-xs text-[#707873] no-underline transition hover:text-[#08763e]">
+              <a href="mailto:redaksi@kawanuamedia.id" className="flex items-center gap-2 text-xs text-[#707873] no-underline transition hover:text-maron-kawanuamedia">
                 <IconMail
                   size={13}
                   stroke={1.8}
@@ -140,7 +140,7 @@ export default function Footer() {
                 </span>
               </a>
               {/* Phone */}
-              <a href="tel:+6282112345678" className="flex items-center gap-2 text-xs text-[#707873] no-underline transition hover:text-[#08763e]">
+              <a href="tel:+6282112345678" className="flex items-center gap-2 text-xs text-[#707873] no-underline transition hover:text-maron-kawanuamedia">
                 <IconPhone
                   size={13}
                   stroke={1.8}
@@ -244,7 +244,7 @@ export default function Footer() {
       {/* ======================================================
           GREEN BOTTOM BAR
       ======================================================= */}
-      <div className="h-3 w-full bg-[#005C2F]"/>
+      <div className="h-3 w-full bg-maron-kawanuamedia-700"/>
     </footer>
   );
 }

@@ -1,18 +1,43 @@
+import { dummyNews } from "@/data/News";
 import API from "@/lib/axios-client"
 
-export const getNewsFn = async ( 
+export const getNewsFn = async (
     limit: number,
     page: number,
-    search?: string
+    category: string,
+    subCategory: string,
+    search: string
 ) => {
-    const response = await API.get(`/public/news`, {
-        params: {
-            limit,
+    // const response = await API.get(`/public/news`, {
+    //     params: {
+    //         limit,
+    //         page,
+    //         category,
+    //         subCategory,
+    //         search
+    //     },
+    // });
+
+    // return response?.data || {}
+    // if (response?.data) {
+    //     return response.data;
+    // }
+
+    /**
+     * Fallback dummy
+     */
+    return {
+        data: dummyNews,
+        meta_data: {
             page,
-            search
+            limit,
+            totalRows:
+                dummyNews.length,
+            totalPage: Math.ceil(
+                dummyNews.length / limit,
+            ),
         },
-    });
-    return response?.data || [];
+    };
 };
 
 export const getDetailNewsFn = async (slug: string) => {

@@ -11,7 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SplatRouteImport } from './routes/$'
-import { Route as NewsNewsRouteImport } from './routes/_news/news'
+import { Route as NewsBeritaRouteImport } from './routes/_news/berita'
 import { Route as NewsSlugSlugRouteImport } from './routes/_news/$slug/$slug'
 
 const IndexRoute = IndexRouteImport.update({
@@ -24,9 +24,9 @@ const SplatRoute = SplatRouteImport.update({
   path: '/$',
   getParentRoute: () => rootRouteImport,
 } as any)
-const NewsNewsRoute = NewsNewsRouteImport.update({
-  id: '/_news/news',
-  path: '/news',
+const NewsBeritaRoute = NewsBeritaRouteImport.update({
+  id: '/_news/berita',
+  path: '/berita',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NewsSlugSlugRoute = NewsSlugSlugRouteImport.update({
@@ -38,34 +38,34 @@ const NewsSlugSlugRoute = NewsSlugSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/$': typeof SplatRoute
-  '/news': typeof NewsNewsRoute
+  '/berita': typeof NewsBeritaRoute
   '/$slug/$slug': typeof NewsSlugSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/$': typeof SplatRoute
-  '/news': typeof NewsNewsRoute
+  '/berita': typeof NewsBeritaRoute
   '/$slug/$slug': typeof NewsSlugSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/$': typeof SplatRoute
-  '/_news/news': typeof NewsNewsRoute
+  '/_news/berita': typeof NewsBeritaRoute
   '/_news/$slug/$slug': typeof NewsSlugSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/$' | '/news' | '/$slug/$slug'
+  fullPaths: '/' | '/$' | '/berita' | '/$slug/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/$' | '/news' | '/$slug/$slug'
-  id: '__root__' | '/' | '/$' | '/_news/news' | '/_news/$slug/$slug'
+  to: '/' | '/$' | '/berita' | '/$slug/$slug'
+  id: '__root__' | '/' | '/$' | '/_news/berita' | '/_news/$slug/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   SplatRoute: typeof SplatRoute
-  NewsNewsRoute: typeof NewsNewsRoute
+  NewsBeritaRoute: typeof NewsBeritaRoute
   NewsSlugSlugRoute: typeof NewsSlugSlugRoute
 }
 
@@ -85,11 +85,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SplatRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/_news/news': {
-      id: '/_news/news'
-      path: '/news'
-      fullPath: '/news'
-      preLoaderRoute: typeof NewsNewsRouteImport
+    '/_news/berita': {
+      id: '/_news/berita'
+      path: '/berita'
+      fullPath: '/berita'
+      preLoaderRoute: typeof NewsBeritaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/_news/$slug/$slug': {
@@ -105,7 +105,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   SplatRoute: SplatRoute,
-  NewsNewsRoute: NewsNewsRoute,
+  NewsBeritaRoute: NewsBeritaRoute,
   NewsSlugSlugRoute: NewsSlugSlugRoute,
 }
 export const routeTree = rootRouteImport

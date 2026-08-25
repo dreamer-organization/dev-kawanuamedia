@@ -76,7 +76,7 @@ export default function PopularCategories() {
                 <h2 className="whitespace-nowrap text-xl font-extrabold uppercase leading-none text-[#1b201d]">
                     Kategori Populer
                 </h2>
-                <span className="h-0.5 w-7.25 shrink-0 rounded-full bg-[#08763e]" />
+                <span className="h-0.5 w-7.25 shrink-0 rounded-full bg-maron-kawanuamedia" />
             </div>
 
             {/* =====================================================

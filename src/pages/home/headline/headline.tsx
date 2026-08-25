@@ -111,7 +111,7 @@ export default function Headline() {
             className="flex h-full flex-col justify-center"
           >
             {/* Label */}
-            <span className="inline-flex w-fit shrink-0 rounded-md bg-[#08763e] px-2 py-1 text-sm font-extrabold uppercase tracking-[0.15px] text-white">
+            <span className="inline-flex w-fit shrink-0 rounded-md bg-maron-kawanuamedia px-2 py-1 text-sm font-extrabold uppercase tracking-[0.15px] text-white">
               HEADLINE
             </span>
             {/* Title */}
@@ -137,7 +137,7 @@ export default function Headline() {
             {/* Button */}
             <Link
               to={`/berita/${activeItem.id}` as never}
-              className="mt-3 inline-flex w-fit shrink-0 items-center gap-2 rounded-md bg-[#08763e] px-3 py-2 text-sm font-bold text-white no-underline transition-all duration-200 hover:bg-[#075f32] hover:shadow-md"
+              className="mt-3 inline-flex w-fit shrink-0 items-center gap-2 rounded-md bg-maron-kawanuamedia px-3 py-2 text-sm font-bold text-white no-underline transition-all duration-200 hover:bg-[#075f32] hover:shadow-md"
             >
               Baca Selengkapnya
               <IconArrowRight

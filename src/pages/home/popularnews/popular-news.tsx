@@ -63,7 +63,7 @@ export default function PopularNews() {
                     Terpopuler
                 </h2>
                 <span
-                    className="h-0.5 w-full rounded-full bg-[#08763e]"
+                    className="h-0.5 w-full rounded-full bg-maron-kawanuamedia"
                 />
             </div>
 
@@ -79,13 +79,13 @@ export default function PopularNews() {
                             className="group grid grid-cols-[18px_minmax(0,1fr)_48px] items-center gap-2 border-b border-[#edf0ee] py-1.75 no-underline last:border-b-0"
                         >
                             {/* Number */}
-                            <span className="font-['Plus_Jakarta_Sans'] text-2xl font-extrabold leading-none text-[#08763e]">
+                            <span className="font-['Plus_Jakarta_Sans'] text-2xl font-extrabold leading-none text-maron-kawanuamedia">
                                 {index + 1}
                             </span>
 
                             {/* Content */}
                             <div className="min-w-0">
-                                <h3 className="line-clamp-2 text-[14px] font-bold leading-[1.35] text-[#252a27] transition-colors duration-200 group-hover:text-[#08763e]">
+                                <h3 className="line-clamp-2 text-[14px] font-bold leading-[1.35] text-[#252a27] transition-colors duration-200 group-hover:text-maron-kawanuamedia">
                                     {item.title}
                                 </h3>
                                 <span className="mt-0.5 block text-[10px] leading-none text-[#919793]">

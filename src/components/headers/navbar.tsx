@@ -544,8 +544,8 @@ export default function Navbar({
                       className={`group relative flex h-full cursor-pointer items-center gap-1 border-0 bg-transparent px-0 text-md font-medium transition-colors duration-200
                         ${
                           active || isDropdownOpen
-                            ? "text-[#08763e]"
-                            : "text-slate-700 hover:text-[#08763e]"
+                            ? "text-maron-kawanuamedia"
+                            : "text-slate-700 hover:text-maron-kawanuamedia"
                         }
                       `}
                     >
@@ -568,7 +568,7 @@ export default function Navbar({
 
                       {/* Active underline */}
                       <span
-                        className={`absolute bottom-0 left-0 h-0.5 rounded-full bg-[#08763e] transition-all duration-300
+                        className={`absolute bottom-0 left-0 h-0.5 rounded-full bg-maron-kawanuamedia transition-all duration-300
                           ${
                             active ||
                             isDropdownOpen
@@ -595,7 +595,7 @@ export default function Navbar({
                             {/* Dropdown card */}
                             <div className="relative overflow-hidden rounded-xl border border-slate-100 bg-white p-2 shadow-[0_16px_45px_rgba(12,46,30,0.12)]">
                               {/* Arrow */}
-                              <span className="absolute -top-1.25 left-1/2 h-3 w-3 -translate-x-1/2 rotate-45 border-l border-t border-red-100 bg-[#08763e]"/>
+                              <span className="absolute -top-1.25 left-1/2 h-3 w-3 -translate-x-1/2 rotate-45 border-l border-t border-red-100 bg-maron-kawanuamedia"/>
 
                               {/* Children */}
                               <div className="relative">
@@ -606,13 +606,13 @@ export default function Navbar({
                                       onClick={() => handleDropdownRoute(child.to)}
                                       className="group flex w-full items-center justify-between rounded-lg px-4 py-3 text-left transition-all duration-200 hover:bg-[#eff7f2] cursor-pointer"
                                     >
-                                      <span className="text-sm font-medium text-slate-700 transition group-hover:text-[#08763e]">
+                                      <span className="text-sm font-medium text-slate-700 transition group-hover:text-maron-kawanuamedia">
                                         {child.name}
                                       </span>
                                       <IconArrowRight
                                         size={12}
                                         stroke={1.8}
-                                        className="-translate-x-1 opacity-0 text-[#08763e] transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100"
+                                        className="-translate-x-1 opacity-0 text-maron-kawanuamedia transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100"
                                       />
                                     </button>
                                   ),
@@ -636,7 +636,7 @@ export default function Navbar({
                 type="button"
                 onClick={onSearch}
                 aria-label="Cari berita"
-                className="grid h-8 w-8 place-items-center rounded-full border-0 bg-transparent text-[#202522] transition hover:bg-[#f3f6f4] hover:text-[#08763e]"
+                className="grid h-8 w-8 place-items-center rounded-full border-0 bg-transparent text-[#202522] transition hover:bg-[#f3f6f4] hover:text-maron-kawanuamedia"
               >
                 <IconSearch size={17} stroke={1.7}/>
               </button>
@@ -645,7 +645,7 @@ export default function Navbar({
               <button
                 type="button"
                 onClick={() => handleDropdownRoute("/kontak")}
-                className="hidden h-8 items-center justify-center rounded-[5px] bg-[#08763e] px-3.75 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#075f32] hover:shadow-md md:flex"
+                className="hidden h-8 items-center justify-center rounded-[5px] bg-maron-kawanuamedia px-3.75 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#075f32] hover:shadow-md md:flex"
               >
                 Kontak / Beriklan
               </button>
@@ -655,7 +655,7 @@ export default function Navbar({
                 type="button"
                 onClick={() => setOpen(true)}
                 aria-label="Buka menu"
-                className="grid h-8 w-8 place-items-center border-0 bg-transparent text-[#08763e] lg:hidden"
+                className="grid h-8 w-8 place-items-center border-0 bg-transparent text-maron-kawanuamedia lg:hidden"
               >
                 <IconMenu2 size={21} stroke={1.8}/>
               </button>
@@ -670,7 +670,7 @@ export default function Navbar({
       <section className="fixed inset-x-0 top-20 z-40 h-12 border-b border-slate-100 bg-white">
         <div className="mx-auto flex h-full container-custom items-center gap-4 overflow-hidden px-5">
           {/* Breaking label */}
-          <div className="shrink-0 rounded-[3px] bg-[#08763e] px-2.25 py-1.25 text-md font-extrabold leading-none tracking-wide text-white">
+          <div className="shrink-0 rounded-[3px] bg-maron-kawanuamedia px-2.25 py-1.25 text-md font-extrabold leading-none tracking-wide text-white">
             BREAKING NEWS
           </div>
 
@@ -682,7 +682,7 @@ export default function Navbar({
                   key={index}
                   className="flex shrink-0 items-center gap-2 text-xs font-medium text-[#5e6562]"
                 >
-                  <span className="h-1 w-1 shrink-0 rounded-full bg-[#08763e]"/>
+                  <span className="h-1 w-1 shrink-0 rounded-full bg-maron-kawanuamedia"/>
                   <span>
                     {news}
                   </span>
@@ -695,7 +695,7 @@ export default function Navbar({
           <button
             type="button"
             onClick={() => handleDropdownRoute( "/berita" )}
-            className="flex shrink-0 cursor-pointer items-center gap-1 border-0 bg-transparent text-md font-semibold text-[#5e6562] transition hover:text-[#08763e]"
+            className="flex shrink-0 cursor-pointer items-center gap-1 border-0 bg-transparent text-md font-semibold text-[#5e6562] transition hover:text-maron-kawanuamedia"
           >
             Lihat Semua
             <IconArrowRight
@@ -751,7 +751,7 @@ export default function Navbar({
                   <div className="flex items-center gap-2">
                     <div className="relative h-6.25 w-7.25">
                       <span
-                        className="absolute bottom-0 left-px h-0 w-0 border-b-22 border-l-14 border-r-14 border-solid border-b-[#08763e] border-l-transparent border-r-transparent"
+                        className="absolute bottom-0 left-px h-0 w-0 border-b-22 border-l-14 border-r-14 border-solid border-b-maron-kawanuamedia border-l-transparent border-r-transparent"
                       />
                       <span
                         className="absolute bottom-0 right-0 h-3 w-2 skew-y-[-30deg] bg-[#17a45a]"
@@ -803,7 +803,7 @@ export default function Navbar({
                               ${
                                 active ||
                                 isOpen
-                                  ? "bg-emerald-50 text-[#08763e]"
+                                  ? "bg-emerald-50 text-maron-kawanuamedia"
                                   : "bg-transparent text-slate-700 hover:bg-slate-50"
                               }
                             `}
@@ -828,7 +828,7 @@ export default function Navbar({
 
                             {active && (
                               <span
-                                className="absolute bottom-2 left-0 top-2 w-0.75 rounded-r-full bg-[#08763e]"
+                                className="absolute bottom-2 left-0 top-2 w-0.75 rounded-r-full bg-maron-kawanuamedia"
                               />
                             )}
                           </motion.button>
@@ -852,7 +852,7 @@ export default function Navbar({
                                           key={child.name}
                                           type="button"
                                           onClick={() => handleDropdownRoute(child.to)}
-                                          className="flex w-full items-center rounded-md px-3 py-2.5 text-left text-[11px] font-medium text-slate-600 transition hover:bg-[#eff7f2] hover:text-[#08763e]"
+                                          className="flex w-full items-center rounded-md px-3 py-2.5 text-left text-[11px] font-medium text-slate-600 transition hover:bg-[#eff7f2] hover:text-maron-kawanuamedia"
                                         >
                                           {
                                             child.name
@@ -878,7 +878,7 @@ export default function Navbar({
                 <button
                   type="button"
                   onClick={() => handleDropdownRoute("/kontak")}
-                  className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#08763e] px-4 py-3.5 text-[11px] font-semibold text-white transition hover:bg-[#075f32]"
+                  className="flex w-full items-center justify-center gap-2 rounded-lg bg-maron-kawanuamedia px-4 py-3.5 text-[11px] font-semibold text-white transition hover:bg-[#075f32]"
                 >
                   Kontak / Beriklan
                   <IconArrowRight size={14} stroke={2}/>

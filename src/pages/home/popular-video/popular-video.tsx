@@ -37,11 +37,11 @@ export default function PopularVideo() {
                 <h2 className="whitespace-nowrap text-xl font-extrabold uppercase leading-none text-[#1b201d]">
                     Video Pilihan
                 </h2>
-                <span className="h-0.5 w-7.25 shrink-0 rounded-full bg-[#08763e]" />
+                <span className="h-0.5 w-7.25 shrink-0 rounded-full bg-maron-kawanuamedia" />
 
                 {/* <Link
                         to={"/video" as never}
-                        className="ml-auto flex shrink-0 items-center gap-1 text-[7px] font-medium text-[#6d7671] no-underline transition-colors duration-200 hover:text-[#08763e]"
+                        className="ml-auto flex shrink-0 items-center gap-1 text-[7px] font-medium text-[#6d7671] no-underline transition-colors duration-200 hover:text-maron-kawanuamedia"
                     >
                     Lihat Semua
                     <IconArrowRight
@@ -66,7 +66,7 @@ export default function PopularVideo() {
                     <div className="absolute inset-0 bg-black/10 transition duration-300 group-hover:bg-black/20" />
 
                     {/* Play button */}
-                    <div className="absolute left-1/2 top-1/2 flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-black/60 text-white shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:bg-[#08763e]">
+                    <div className="absolute left-1/2 top-1/2 flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-black/60 text-white shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:bg-maron-kawanuamedia">
                         <IconPlayerPlay
                             size={16}
                             stroke={1.8}
@@ -81,7 +81,7 @@ export default function PopularVideo() {
                 </div>
 
                 {/* Title */}
-                <h3 className="mt-2 line-clamp-2 text-sm font-bold leading-[1.4] text-[#252a27] transition-colors duration-200 group-hover:text-[#08763e]">
+                <h3 className="mt-2 line-clamp-2 text-sm font-bold leading-[1.4] text-[#252a27] transition-colors duration-200 group-hover:text-maron-kawanuamedia">
                     {video.title}
                 </h3>
 

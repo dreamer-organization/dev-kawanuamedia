@@ -32,7 +32,7 @@ export default function KawanuaPodcast({
                 </p>
                 {/* CTA */}
                 <Link
-                    to={href as never} className="mt-2 inline-flex items-center gap-1.5 rounded-sm bg-[#08763e] px-2.5 py-1.5 text-[7px] font-bold text-white no-underline transition-all duration-200 hover:bg-[#075f32] hover:shadow-md">
+                    to={href as never} className="mt-2 inline-flex items-center gap-1.5 rounded-sm bg-maron-kawanuamedia px-2.5 py-1.5 text-[7px] font-bold text-white no-underline transition-all duration-200 hover:bg-[#075f32] hover:shadow-md">
                     <IconHeadphones
                         size={11}
                         stroke={2}
@@ -44,7 +44,7 @@ export default function KawanuaPodcast({
             {/* =====================================================
                 DECORATION
             ====================================================== */}
-            <div className="pointer-events-none absolute -bottom-4.5 -right-2 z-0 -rotate-12 text-[#08763e]/10">
+            <div className="pointer-events-none absolute -bottom-4.5 -right-2 z-0 -rotate-12 text-maron-kawanuamedia/10">
                 <IconHeadphones
                     size={100}
                     stroke={1}
@@ -52,10 +52,10 @@ export default function KawanuaPodcast({
             </div>
 
             {/* Additional decorative circle */}
-            <div className="pointer-events-none absolute -bottom-7.5 -right-7.5 h-27.5 w-27.5 rounded-full bg-[#08763e]/[0.035]" />
+            <div className="pointer-events-none absolute -bottom-7.5 -right-7.5 h-27.5 w-27.5 rounded-full bg-maron-kawanuamedia/[0.035]" />
 
             {/* Small play icon */}
-            <div className="pointer-events-none absolute bottom-3.25 right-4.25 z-10 flex h-7 w-7 items-center justify-center rounded-full bg-[#08763e]/10 text-[#08763e]/70">
+            <div className="pointer-events-none absolute bottom-3.25 right-4.25 z-10 flex h-7 w-7 items-center justify-center rounded-full bg-maron-kawanuamedia/10 text-maron-kawanuamedia/70">
                 <IconPlayerPlay
                     size={11}
                     fill="currentColor"
