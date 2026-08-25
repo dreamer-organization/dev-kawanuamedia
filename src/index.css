@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@config "../tailwind.config.ts";
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin '@tailwindcss/typography';
+
+:root {
+  --primary: #09121D;
+  --secondary: #101C29;
+  --gold: #C6A15B;
+  --gold-light: #D8B97A;
+  --text: #FFFFFF;
+  --paragraph: #A7ADB5;
+  --background: #F7F3EC;
+  --border: #243445;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #111827;
+
+}
+
+/* Hide scrollbar */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari */
+}
+
+.font-title {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.container-custom {
+  @apply max-w-380 mx-auto px-6 lg:px-8;
+}
+
+/* GOLD TEXT HOVER HEADER */
+.gold-text-hover {
+  position: relative;
+  color: white;
+  transition: color 0.5s ease;
+}
+
+.gold-text-hover:hover {
+  background: linear-gradient(110deg,
+      #B88732 0%,
+      #D4A144 35%,
+      #F5E8C8 50%,
+      #D4A144 65%,
+      #B88732 100%);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gold-text-shine 1.5s ease forwards;
+}
+
+@keyframes gold-text-shine {
+  from {
+    background-position: 100% 0;
+  }
+
+  to {
+    background-position: 0% 0;
+  }
+}
+
+/* PDF */
+/* =========================================================
+   REACT PDF
+========================================================= */
+
+.react-pdf__Page {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background: white;
+}
+
+.react-pdf__Page canvas {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.react-pdf__Page__textContent {
+  position: absolute !important;
+  inset: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none;
+}
+
+.react-pdf__Page__textContent span {
+  position: absolute;
+  white-space: pre;
+  transform-origin: 0% 0%;
+}
+
+.react-pdf__Page__annotations {
+  position: absolute !important;
+  inset: 0 !important;
+}

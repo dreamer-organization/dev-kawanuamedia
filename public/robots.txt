@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dev-sgs-lawfirm.vercel.app/sitemap.xml
