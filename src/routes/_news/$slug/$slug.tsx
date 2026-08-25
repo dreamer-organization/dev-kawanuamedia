@@ -1,4 +1,4 @@
-import NewsDetailPage from '@/pages/news/news-detail/news-detail'
+// import NewsDetailPage from '@/pages/news/news-detail/news-detail'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/_news/$slug/$slug')({
@@ -7,5 +7,6 @@ export const Route = createFileRoute('/_news/$slug/$slug')({
 
 function RouteComponent() {
   const { slug } = Route.useParams()
-  return <NewsDetailPage slug={slug}/>
+  return <></>
+  // return <NewsDetailPage slug={slug}/>
 }
